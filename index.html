@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIOCO DELL'OCA ECOLOGICO - AI Edition</title>
+    <title>GIOCO DELL'OCA - AI Edition</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -46,7 +46,7 @@
         // --- FIX PER GITHUB PAGES / AMBIENTI ESTERNI ---
         // Se process non esiste (browser puro), lo definiamo per evitare errori.
         if (typeof window.process === 'undefined') {
-            window.process = { env: { API_KEY: '' } };
+            window.process = { env: { API_KEY: AIzaSyBn109EJdSevirx6voR-stMwkEYJD0P5wY'' } };
         }
 
         // --- COSTANTI ---
@@ -136,7 +136,7 @@
             const start = async (t, a, c) => {
                 // RECUPERO API KEY:
                 // Se sei su GitHub, puoi incollare la chiave qui sotto tra le virgolette se process.env.API_KEY è vuoto
-                const finalApiKey = process.env.API_KEY || ""; 
+                const finalApiKey = process.env.API_KEY || "AIzaSyBn109EJdSevirx6voR-stMwkEYJD0P5wY"; 
                 
                 if (!finalApiKey) {
                     alert("ERRORE: Chiave API mancante. Incolla la tua chiave API di Google AI Studio nel codice per far funzionare il gioco su GitHub.");
